@@ -1,0 +1,266 @@
+
+
+body {
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 253, 246);
+    cursor: url('img/iconologo.png'),
+    auto;
+    font-size: 12px;
+    min-height: 100vh;
+  
+}
+
+.Header {
+    display: flex;
+    padding: 10px 10px;
+    color: rgb(45, 42, 42);
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    border-bottom: 1px solid rgb(62, 62, 62);
+    
+}
+
+
+.Header-logoImage {
+    width: 100px;
+    margin: 15px;
+}
+
+.Header-navList {
+    justify-content: center;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 16px;
+    
+  }
+
+
+
+  
+
+.Header-navItem {
+    padding: 20px;
+    border-left: 1px solid rgb(62, 62, 62); 
+}
+
+.Header-navLink {
+    color: rgb(62, 62, 62);
+    text-decoration: none;
+   
+}
+
+.Header-navLink:hover {
+    
+    font-weight: 600;
+}
+
+.Header-paginas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.Main {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.Main-secundario{
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+.Main-texto{
+    font-size: 24px;
+    font-family: "musemoderno";
+    font-weight: 300;
+    line-height: 150%;
+    flex-wrap: wrap;
+    margin: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    
+
+}
+
+.Main-imgsec{
+    width: 20%;
+    height: 20%;
+
+}
+.Main-textosecundario{ font-size: 20px;
+    font-family: "musemoderno";
+    text-align:center;
+    font-weight: 200;
+    line-height: 150%;
+    flex-wrap: wrap;
+    margin: 20px 0 50px 0;
+    max-width: 1030px;
+
+}
+
+.Main-newsletter {
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: rgba(126, 212, 139, 0.5); /* Color de fondo con opacidad */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 400px;
+    
+
+}
+.Main-newsletter h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-family: "limelight";
+}
+
+.Main-newsletter p{
+    font-family: "museomoderno";
+    font-size: 16px;
+}
+.Main-newsletter input[type="email"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: rgba(255, 253, 246);
+}
+.Main-newsletter input[type="submit"] {
+    background-color: rgb(62, 62, 62); 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "limelight";
+}
+.Main-newsletter input[type="submit"]:hover {
+    background-color: rgb(228, 130, 177);
+}
+
+.Main-parteinferior{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.Main-ilustracion{
+    width: 100%;
+} 
+
+.Main-ilustracion--img{
+    max-width: 30%;
+    
+}
+
+.destacado{
+    font-family: "museomoderno";
+    font-weight: 400;
+}
+
+ .Main-proceso{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+} 
+
+.Main-procesoItem{
+    width: 300px;
+    padding: 50px;
+}
+.button{
+   
+    margin: 20px;
+    width: 15%;
+    background-color: rgb(41, 36, 36);
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-family: "limelight";
+
+   
+    
+}
+
+.button:hover{
+    background-color: rgb(228, 130, 177);
+}
+
+.Main-cita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "musemoderno";
+    font-weight: 200;
+    font-style: italic;
+    margin-left: 50px;
+    width: 600px;
+    margin: 20px 25px;
+
+}
+
+.Main-quote{
+    font-size: 20px;
+    text-align: justify;
+    
+}
+
+.Main-author{
+    font-family: "Italiana";
+    font-size: 16px;
+    text-align: end;
+
+
+}
+
+.footer {
+    background-color: rgb(255, 253, 246);
+    color: rgb(41, 36, 36);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    min-width: 100%;
+    height: 50px;
+    
+  }
+
+ .footer a {
+     color: rgb(45, 42, 42);
+     text-decoration: none;
+    
+     
+ }
+ 
