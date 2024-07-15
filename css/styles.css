@@ -25,6 +25,7 @@ body {
     font-weight: 300;
     font-style: normal;
     border-bottom: 1px solid rgb(62, 62, 62);
+    position: relative;
     
 }
 
@@ -44,7 +45,9 @@ body {
   }
 
 
-
+/* .Main-imglateral{
+    position: fx;
+} */
   
 
 .Header-navItem {
@@ -87,6 +90,12 @@ body {
 
 
 }
+
+.Main-encabezado{
+  
+    font-family: "limelight";
+
+}
 .Main-texto{
     font-size: 24px;
     font-family: "musemoderno";
@@ -105,6 +114,25 @@ body {
     height: 20%;
 
 }
+
+.Main-quienessomosbox{
+    display: flex;
+    flex-direction: row;
+}
+
+.Main-quienessomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+}
+.Main-textosecundariobox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .Main-textosecundario{ font-size: 20px;
     font-family: "musemoderno";
     text-align:center;
@@ -113,6 +141,7 @@ body {
     flex-wrap: wrap;
     margin: 20px 0 50px 0;
     max-width: 1030px;
+    
 
 }
 
@@ -121,7 +150,6 @@ body {
     border-radius: 25px;
     text-align: center;
     background-color: rgba(126, 212, 139, 0.5); /* Color de fondo con opacidad */
-    border-radius: 10px; /* Borde redondeado */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
     max-width: 400px;
     
@@ -199,7 +227,6 @@ body {
 .button{
    
     margin: 20px;
-    width: 15%;
     background-color: rgb(41, 36, 36);
     font-size: 20px;
     padding: 15px;
@@ -239,7 +266,7 @@ body {
 .Main-author{
     font-family: "Italiana";
     font-size: 16px;
-    text-align: end;
+    text-align:end;
 
 
 }
@@ -263,4 +290,81 @@ body {
     
      
  }
- 
+.slider-container {
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.employee-card {
+    flex: 0 0 33.33%; /* Tres tarjetas por fila */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(126, 212, 139, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 25px;
+    max-width: 300px; /* Ancho máximo ajustado */
+    min-width: 200px; /* Ancho mínimo para evitar problemas */
+}
+
+.employee-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 10px solid rgb(228, 130, 177); /* Borde con color */
+}
+
+.employee-card h3 {
+    margin: 10px 0;
+    font-family: "limelight";
+}
+
+.employee-card p {
+    font-size: 14px;
+    color: rgb(45, 42, 42);
+    font-family: "museomoderno";
+}
+
+.employee-card .Main-quote {
+    color: rgb(45, 42, 42);
+    font-family: "museomoderno";
+    font-weight: 200;
+    font-style: italic;
+}
+
+.employee-card .Main-author {
+    font-style: italic;
+    color: rgb(45, 42, 42);
+    font-family: "italiana";
+}
+
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-buttons button {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+}
+
+.nav-buttons button:focus {
+    outline: none;
+}
