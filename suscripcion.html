@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripcion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=MuseoModerno:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/planes.js" defer></script>
+    <script src="js/suscripcion.js" defer></script>
+</head>
+<body>
+    <main class="Main">
+    <div class="form-container">
+        <a href="http://127.0.0.1:5501/index.html"><img src="img/READMIND.png" alt="Logo" class="Header-logoImage"></a>
+        <form id="subscription-form">
+        <h1 class="form-title">¡Únete a <span class="destacado">READ MIND</span>!</h1>
+        
+            <div class="form-group">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-input" required>
+                <span class="error-message" id="error-nombre"></span>
+            </div>
+            <div class="form-group">
+                <label for="apellidos" class="form-label">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" class="form-input" required>
+                <span class="error-message" id="error-apellidos"></span>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+                <span class="error-message" id="error-email"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirm-email" class="form-label">Confirmar Correo Electrónico:</label>
+                <input type="email" id="confirm-email" name="confirm-email" class="form-input" required>
+                <span class="error-message" id="error-confirm-email"></span>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Contraseña:</label>
+                <input type="password" id="password" name="password" class="form-input" required>
+                <div id="password-strength" class="password-strength"></div>
+                <span class="error-message" id="error-password"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password" class="form-label">Confirmar Contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" class="form-input" required>
+                <span class="error-message" id="error-confirm-password"></span>
+            </div>
+            <div class="form-group">
+                <label for="telefono" class="form-label">Teléfono de Contacto:</label>
+                <input type="tel" id="telefono" name="telefono" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="direccion" class="form-label">Dirección de Envío:</label>
+                <input type="text" id="direccion" name="direccion" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="plan" class="form-label">Escoge tu Plan:</label>
+                <select id="plan" name="plan" class="form-input" required>
+                    <option value="">Selecciona un plan</option>
+                    <option value="solitario">Lector Solitario - 12€ / mes</option>
+                    <option value="amigo">Lector Amigo - 15€ / mes</option>
+                    <option value="voraz">Lector Voraz - 25€ / mes</option>
+                </select>
+            </div>
+            <div class="form-group" id="genre-container">
+                <label class="form-label">Escoge tu(s) Género(s) Literario(s):</label>
+                <div id="single-genre" class="genre-select">
+                    <input list="genres" name="genre-single" id="genre-single" class="form-input">
+                    <datalist id="genres">
+                        <option value="Ficción">
+                        <option value="Misterio">
+                        <option value="Fantasía">
+                        <option value="No Ficción">
+                    </datalist>
+                </div>
+                <div id="multiple-genre" class="genre-select" style="display: none;">
+                    <label class="form-label">Género 1:</label>
+                    <input list="genres" name="genre-multiple-1" class="form-input genre-multiple">
+                    <label class="form-label">Género 2:</label>
+                    <input list="genres" name="genre-multiple-2" class="form-input genre-multiple">
+                    <label class="form-label">Género 3:</label>
+                    <input list="genres" name="genre-multiple-3" class="form-input genre-multiple">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="card-number" class="form-label">Número de Tarjeta:</label>
+                <input type="text" id="card-number" name="card-number" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="card-expiry" class="form-label">Fecha de Expiración:</label>
+                <input type="text" id="card-expiry" name="card-expiry" class="form-input" placeholder="MM/AA" required>
+            </div>
+            <div class="form-group">
+                <label for="card-cvc" class="form-label">CVC:</label>
+                <input type="text" id="card-cvc" name="card-cvc" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="cupon" class="form-label">Código de Descuento (opcional):</label>
+                <input type="text" id="cupon" name="cupon" class="form-input">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" class="form-checkbox" required>
+                <label for="terms" class="form-label">Acepto los <a href="#">términos y condiciones</a></label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="comunicaciones" name="comunicaciones" class="form-checkbox">
+                <label for="comunicaciones" class="form-label">Acepto recibir comunicaciones por correo electrónico</label>
+            </div>
+            <button type="submit" class="form-button">Registrarse</button>
+            <button type="reset" class="form-button">Cancelar</button>
+        </form>
+        <div id="confirmation-message" class="confirmation-message" style="display: none;">
+            <p>Registro realizado correctamente. Te enviaremos un correo de confirmación.</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>

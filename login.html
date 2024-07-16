@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=MuseoModerno:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/login.js" defer></script>
+</head>
+<body>
+    <main class="Main">
+        <div class="login-container">
+            <h1 class="login-title">Inicio de Sesión</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" id="login-email" name="login-email" class="form-input" required>
+                    <span class="error-message" id="error-login-email"></span>
+                </div>
+                <div class="form-group">
+                    <label for="login-password" class="form-label">Contraseña:</label>
+                    <input type="password" id="login-password" name="login-password" class="form-input" required>
+                    <span class="error-message" id="error-login-password"></span>
+                </div>
+                <button type="submit" class="form-button">Iniciar Sesión</button>
+                <p class="forgot-password"><a href="#">¿Olvidaste tu contraseña?</a></p>
+            </form>
+            <div id="login-confirmation-message" class="confirmation-message" style="display: none;">
+                <p>Inicio de sesión exitoso.</p>
+            </div>
+            <p class="not-member-text">¿Todavía no eres socio? <a href="registro.html">Regístrate aquí</a></p>
+        </div>
+    </main>
+    
+</body>
+</html>
