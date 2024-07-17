@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=MuseoModerno:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/contact-script.js" defer></script>
+    <script src="js/planes.js" defer></script>
+</head>
+<body>
+    <header class="Header">
+        <div class="Header-logo">
+            <a href="http://127.0.0.1:5501/index.html"><img src="img/READMIND.png" alt="Logo" class="Header-logoImage"></a>
+        </div>
+        <div class="Header-paginas">
+        <nav class="Header-nav">
+            <ul class="Header-navList">
+                <li class="Header-navItem"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLink">¿quiénes somos?</a></li>
+
+                <li class="Header-navItem"><a href="http://127.0.0.1:5501/planes.html" class="Header-navLink">planes</a></li>
+                <li class="Header-navItem"><a href="http://127.0.0.1:5501/contacto.html" class="Header-navLink">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <div class="acordeon">
+        <div class="accordion">
+            <button class="accordion-item">¿Cómo funcionan los envíos?</button>
+            <div class="panel">
+                <p>Los libros se envían el primer día hábil de cada mes. Recibirás un correo electrónico con el número de seguimiento una vez que se haya enviado tu libro.</p>
+            </div>
+
+            <button class="accordion-item">¿Puedo cambiar la temática de mi suscripción?</button>
+            <div class="panel">
+                <p>Sí, puedes cambiar la temática de tu suscripción en tu perfil o enviándonos un correo electrónico a soporte@readmind.com antes del 25 de cada mes.</p>
+            </div>
+
+            <button class="accordion-item">¿Cómo puedo darme de baja de la suscripción?</button>
+            <div class="panel">
+                <p>Para darte de baja, simplemente accede a tu perfil y sigue las instrucciones en la sección de administración de suscripciones. También puedes contactarnos a soporte@readmind.com para asistencia.</p>
+            </div>
+
+            <button class="accordion-item">¿Qué métodos de pago aceptan?</button>
+            <div class="panel">
+                <p>Aceptamos únicamente tarjeta de débito o crédito.</p>
+            </div>
+
+            <button class="accordion-item">¿Cómo puedo sugerir un libro para que sea considerado en las futuras selecciones del club de lectura?</button>
+            <div class="panel">
+                <p>Puedes sugerir un libro enviándonos un correo electrónico a sugerencias@readmind.com con el título del libro, el autor y una breve descripción de por qué crees que sería una buena elección para nuestros miembros. ¡Estamos siempre abiertos a nuevas recomendaciones!</p>
+            </div>
+
+            <button class="accordion-item">¿Qué pasa si no recibo mi libro?</button>
+            <div class="panel">
+                <p>Si no recibes tu libro, por favor contáctanos a soporte@readmind.com y te ayudaremos a rastrear el envío o a enviar un reemplazo si es necesario.</p>
+            </div>
+
+            <button class="accordion-item">¿Cómo puedo actualizar mi información de pago?</button>
+            <div class="panel">
+                <p>Puedes actualizar tu información de pago accediendo a tu perfil y seleccionando la opción de actualizar información de pago. También puedes contactarnos para obtener asistencia.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form-container">
+        <h1 class="contact-form-title">Contáctanos</h1>
+        <p class="contact-form-text">En <span class="destacado">READ MIND</span>, nuestros clientes son nuestra prioridad. Valoramos mucho tus opiniones y estamos aquí para ayudar en lo que necesites. No dudes en contactar con nosotros a través de este formulario, correo electrónico o por teléfono. ¡Nos encantaría escucharte!</p>
+        
+        <p class="contact-form-info"><strong>Correo electrónico:</strong> contacto@readmind.com</p>
+        <p class="contact-form-info"><strong>Teléfono:</strong> +34 123 456 789</p>
+        
+        <form id="contact-form" class="contact-form">
+            <div class="contact-form-group">
+                <label for="contact-form-name" class="contact-form-label">Nombre:</label>
+                <input type="text" id="contact-form-name" name="contact-form-name" class="contact-form-input" required>
+            </div>
+            <div class="contact-form-group">
+                <label for="contact-form-email" class="contact-form-label">Correo electrónico:</label>
+                <input type="email" id="contact-form-email" name="contact-form-email" class="contact-form-input" required>
+            </div>
+            <div class="contact-form-group">
+                <label for="contact-form-message" class="contact-form-label">Mensaje:</label>
+                <textarea id="contact-form-message" name="contact-form-message" class="contact-form-input" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="contact-form-button">Enviar mensaje</button>
+        </form>
+        <div id="contact-form-confirmation-message" class="contact-form-confirmation-message" style="display: none;">
+            <p>Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo en el menor tiempo posible.¡Gracias!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        
+        <div class="social-icons">
+            <a href="https://wa.me/123456789" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp fa-2xl"></i>
+            </a>
+            <a href="https://www.instagram.com/tu_perfil" target="_blank" title="Instagram">
+                <i class="fab fa-instagram fa-2xl"></i>
+            </a>
+            <a href="https://www.facebook.com/tu_perfil" target="_blank" title="Facebook">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+            </a>
+            <a href="https://twitter.com/tu_perfil" target="_blank" title="Twitter">
+                <i class="fab fa-twitter fa-2xl"></i>
+            </a>
+        </div>
+        <div class="Footer_tyc "><a href="tyyc.html">Términos y condiciones</a></div>
+       
+    </div>
+</body>
+</html>

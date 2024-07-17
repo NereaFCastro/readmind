@@ -17,25 +17,26 @@
 <body>
     <main class="Main">
         <div class="login-container">
+            <a href="http://127.0.0.1:5501/index.html"><img src="img/READMIND.png" alt="Logo" class="Header-logoImage"></a>
             <h1 class="login-title">Inicio de Sesión</h1>
             <form id="login-form">
                 <div class="form-group">
-                    <label for="login-email" class="form-label">Correo Electrónico:</label>
+                    <label for="login-email" class="form-label">Correo electrónico:*</label>
                     <input type="email" id="login-email" name="login-email" class="form-input" required>
                     <span class="error-message" id="error-login-email"></span>
                 </div>
                 <div class="form-group">
-                    <label for="login-password" class="form-label">Contraseña:</label>
+                    <label for="login-password" class="form-label">Contraseña:*</label>
                     <input type="password" id="login-password" name="login-password" class="form-input" required>
                     <span class="error-message" id="error-login-password"></span>
                 </div>
-                <button type="submit" class="form-button">Iniciar Sesión</button>
+                <button type="submit" class="form-button">Iniciar sesión</button>
                 <p class="forgot-password"><a href="#">¿Olvidaste tu contraseña?</a></p>
             </form>
             <div id="login-confirmation-message" class="confirmation-message" style="display: none;">
                 <p>Inicio de sesión exitoso.</p>
             </div>
-            <p class="not-member-text">¿Todavía no eres socio? <a href="registro.html">Regístrate aquí</a></p>
+            <p class="not-member-text">¿Todavía no formas parte del club? <a href="registro.html">¡Únete!</a></p>
         </div>
     </main>
     

@@ -21,8 +21,9 @@
         <a href="http://127.0.0.1:5501/index.html"><img src="img/READMIND.png" alt="Logo" class="Header-logoImage"></a>
         <form id="subscription-form">
         <h1 class="form-title">¡Únete a <span class="destacado">READ MIND</span>!</h1>
-        
+       
             <div class="form-group">
+                <h2>Tus datos</h2>
                 <label for="nombre" class="form-label">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" class="form-input" required>
                 <span class="error-message" id="error-nombre"></span>
@@ -33,12 +34,12 @@
                 <span class="error-message" id="error-apellidos"></span>
             </div>
             <div class="form-group">
-                <label for="email" class="form-label">Correo Electrónico:</label>
+                <label for="email" class="form-label">Correo electrónico:</label>
                 <input type="email" id="email" name="email" class="form-input" required>
                 <span class="error-message" id="error-email"></span>
             </div>
             <div class="form-group">
-                <label for="confirm-email" class="form-label">Confirmar Correo Electrónico:</label>
+                <label for="confirm-email" class="form-label">Confirmación correo electrónico:</label>
                 <input type="email" id="confirm-email" name="confirm-email" class="form-input" required>
                 <span class="error-message" id="error-confirm-email"></span>
             </div>
@@ -49,20 +50,21 @@
                 <span class="error-message" id="error-password"></span>
             </div>
             <div class="form-group">
-                <label for="confirm-password" class="form-label">Confirmar Contraseña:</label>
+                <label for="confirm-password" class="form-label">Confirmación contraseña:</label>
                 <input type="password" id="confirm-password" name="confirm-password" class="form-input" required>
                 <span class="error-message" id="error-confirm-password"></span>
             </div>
             <div class="form-group">
-                <label for="telefono" class="form-label">Teléfono de Contacto:</label>
+                <label for="telefono" class="form-label">Teléfono de contacto:</label>
                 <input type="tel" id="telefono" name="telefono" class="form-input">
             </div>
             <div class="form-group">
-                <label for="direccion" class="form-label">Dirección de Envío:</label>
+                <label for="direccion" class="form-label">Dirección de envío:</label>
                 <input type="text" id="direccion" name="direccion" class="form-input">
             </div>
             <div class="form-group">
-                <label for="plan" class="form-label">Escoge tu Plan:</label>
+                <h2>Tu plan</h2>
+                <label for="plan" class="form-label">¿Qué tipo de lector eres?</label>
                 <select id="plan" name="plan" class="form-input" required>
                     <option value="">Selecciona un plan</option>
                     <option value="solitario">Lector Solitario - 12€ / mes</option>
@@ -71,14 +73,19 @@
                 </select>
             </div>
             <div class="form-group" id="genre-container">
-                <label class="form-label">Escoge tu(s) Género(s) Literario(s):</label>
+                <label class="form-label">¿Cuál es tu género favorito? No te preocupes, podrás cambiar cuantas veces quieras en tu perfil.</label>
                 <div id="single-genre" class="genre-select">
                     <input list="genres" name="genre-single" id="genre-single" class="form-input">
                     <datalist id="genres">
                         <option value="Ficción">
                         <option value="Misterio">
                         <option value="Fantasía">
-                        <option value="No Ficción">
+                        <option value="No ficción">
+                        <option value="Romántica">
+                        <option value="Histórica">
+                        <option value="Poesía">
+                        <option value="¡No puedo escoger!">
+                        </option>
                     </datalist>
                 </div>
                 <div id="multiple-genre" class="genre-select" style="display: none;">
@@ -91,6 +98,7 @@
                 </div>
             </div>
             <div class="form-group">
+                <h2>Tus datos bancarios</h2>
                 <label for="card-number" class="form-label">Número de Tarjeta:</label>
                 <input type="text" id="card-number" name="card-number" class="form-input" required>
             </div>
@@ -103,19 +111,20 @@
                 <input type="text" id="card-cvc" name="card-cvc" class="form-input" required>
             </div>
             <div class="form-group">
-                <label for="cupon" class="form-label">Código de Descuento (opcional):</label>
+                <label for="cupon" class="form-label">¿Tienes un código de escuento? </label>
                 <input type="text" id="cupon" name="cupon" class="form-input">
             </div>
-            <div class="form-group">
+            <div class="form-group form-group--check">
+                <input type="checkbox" id="comunicaciones" name="comunicaciones" class="form-checkbox">
+                <label for="comunicaciones" class="form-label">¡Me gustaría suscribirme al Newsletter!</label>
+            </div>
+            <div class="form-group form-group--check">
                 <input type="checkbox" id="terms" name="terms" class="form-checkbox" required>
                 <label for="terms" class="form-label">Acepto los <a href="#">términos y condiciones</a></label>
             </div>
-            <div class="form-group">
-                <input type="checkbox" id="comunicaciones" name="comunicaciones" class="form-checkbox">
-                <label for="comunicaciones" class="form-label">Acepto recibir comunicaciones por correo electrónico</label>
-            </div>
             <button type="submit" class="form-button">Registrarse</button>
-            <button type="reset" class="form-button">Cancelar</button>
+            <p>Volver a la <a href="http://127.0.0.1:5501/index.html">página principal</a></p>
+            
         </form>
         <div id="confirmation-message" class="confirmation-message" style="display: none;">
             <p>Registro realizado correctamente. Te enviaremos un correo de confirmación.</p>
