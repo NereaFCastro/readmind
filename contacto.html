@@ -14,22 +14,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/contact-script.js" defer></script>
     <script src="js/planes.js" defer></script>
+    <script src="js/menu.js"></script>
 </head>
 <body>
     <header class="Header">
-        <div class="Header-logo">
-            <a href="http://127.0.0.1:5501/index.html"><img src="img/READMIND.png" alt="Logo" class="Header-logoImage"></a>
-        </div>
         <div class="Header-paginas">
-        <nav class="Header-nav">
-            <ul class="Header-navList">
-                <li class="Header-navItem"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLink">¿quiénes somos?</a></li>
-
-                <li class="Header-navItem"><a href="http://127.0.0.1:5501/planes.html" class="Header-navLink">planes</a></li>
-                <li class="Header-navItem"><a href="http://127.0.0.1:5501/contacto.html" class="Header-navLink">FAQ</a></li>
-            </ul>
-        </nav>
-    </div>
+            <div class="Header-logo">
+                <a href="http://127.0.0.1:5501/index.html"><img src="img/READMIND.png" alt="Logo" class="Header-logoImage"></a>
+            </div>
+            <nav class="Header-nav">
+                <ul class="Header-navList">
+                    <li class="Header-navItem"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLink">¿quiénes somos?</a></li>
+                    <li class="Header-navItem"><a href="http://127.0.0.1:5501/planes.html" class="Header-navLink">planes</a></li>
+                    <li class="Header-navItem"><a href="http://127.0.0.1:5501/contacto.html" class="Header-navLink">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Header-right">
+            <a href="login.html" class="Header-navLink">
+                <i class="fas fa-user"></i> Log in
+            </a>
+        </div>
+        <button class="Header-menuButton" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="Header-mobileMenu">
+            <nav class="Header-navMobile">
+                <ul class="Header-navListMobile">
+                    <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLinkMobile">¿Quiénes somos?</a></li>
+                    <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/planes.html" class="Header-navLinkMobile">Planes</a></li>
+                    <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/contacto.html" class="Header-navLinkMobile">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div class="acordeon">
         <div class="accordion">

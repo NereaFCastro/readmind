@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/script.js" defer></script>
+    <script src="js/menu.js"></script>
 </head>
 <body>
-        <header class="Header">
+    <header class="Header">
+        <div class="Header-paginas">
             <div class="Header-logo">
                 <a href="http://127.0.0.1:5501/index.html"><img src="img/READMIND.png" alt="Logo" class="Header-logoImage"></a>
             </div>
-            <div class="Header-paginas">
             <nav class="Header-nav">
                 <ul class="Header-navList">
                     <li class="Header-navItem"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLink">¿quiénes somos?</a></li>
@@ -28,7 +29,24 @@
                 </ul>
             </nav>
         </div>
-        </header>
+        <div class="Header-right">
+            <a href="login.html" class="Header-navLink">
+                <i class="fas fa-user"></i> Log in
+            </a>
+        </div>
+        <button class="Header-menuButton" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="Header-mobileMenu">
+            <nav class="Header-navMobile">
+                <ul class="Header-navListMobile">
+                    <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLinkMobile">¿Quiénes somos?</a></li>
+                    <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/planes.html" class="Header-navLinkMobile">Planes</a></li>
+                    <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/contacto.html" class="Header-navLinkMobile">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
         <main class="Main">
         <div class="Main-secundario">
             <!-- <img class="Main-imgsec" src="img/Reading-A-Book-3--Streamline-Milano.png" alt=""> -->
@@ -48,7 +66,7 @@
                     <p class="Main-textosecundario">Únete a nosotros y sé parte de una comunidad que celebra la lectura, el aprendizaje y la conexión humana. En <span class="destacado">READ MIND</span> , cada libro es el comienzo de una nueva aventura, y cada debate, una oportunidad para crecer y descubrir juntos. ¡Suscríbete hoy y empieza tu viaje literario con nosotros!</p></div>
                     <img class="Main-imglateral" src="img/Frame.svg" alt=""></div>
             
-            <a href="#" class="button">¡Únete al club!</a>
+            <a href="http://127.0.0.1:5501/suscripcion.html" class="button">¡Únete al club!</a>
         </div>
        
         </div>

@@ -13,56 +13,69 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/planes.js" defer></script>
+    <script src="menu.js"></script>
 </head>
 <body>
     <header class="Header">
-        <div class="Header-logo">
-            <a href="http://127.0.0.1:5501/index.html"><img src="img/READMIND.png" alt="Logo" class="Header-logoImage"></a>
-        </div>
         <div class="Header-paginas">
-        <nav class="Header-nav">
-            <ul class="Header-navList">
-                <li class="Header-navItem"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLink">¿quiénes somos?</a></li>
-               
-                <li class="Header-navItem"><a href="http://127.0.0.1:5501/planes.html" class="Header-navLink">planes</a></li>
-                <li class="Header-navItem"><a href="http://127.0.0.1:5501/contacto.html" class="Header-navLink">FAQ</a></li>
-            </ul>
-        </nav>
-    </div>
+            <div class="Header-logo">
+                <a href="http://127.0.0.1:5501/index.html"><img src="img/READMIND.png" alt="Logo" class="Header-logoImage"></a>
+            </div>
+            <nav class="Header-nav">
+                <ul class="Header-navList">
+                    <li class="Header-navItem"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLink">¿quiénes somos?</a></li>
+                    <li class="Header-navItem"><a href="http://127.0.0.1:5501/planes.html" class="Header-navLink">planes</a></li>
+                    <li class="Header-navItem"><a href="http://127.0.0.1:5501/contacto.html" class="Header-navLink">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Header-right">
+            <a href="login.html" class="Header-navLink">
+                <i class="fas fa-user"></i> Log in
+            </a>
+        </div>
+        <button class="Header-menuButton" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="Header-mobileMenu">
+            <nav class="Header-navMobile">
+                <ul class="Header-navListMobile">
+                    <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLinkMobile">¿Quiénes somos?</a></li>
+                    <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/planes.html" class="Header-navLinkMobile">Planes</a></li>
+                    <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/contacto.html" class="Header-navLinkMobile">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="Main">
         <div class="pricing-table">
             <div class="pricing-card">
                 <h2>Lector Solitario</h2>
                 <p class="price">12€ / mes</p>
-                <ul>
-                    <li>1 libro al mes relacionado con tu temática favorita</li>
-                    <li>Elige entre nuestras variadas temáticas literarias</li>
-                    <li>Sumérgete en la lectura a tu propio ritmo</li>
-                </ul>
-                <a href="#" class="signup-btn">Únete Ahora</a>
+                <p>
+                    Recibirás un libro al mes de tu género preferido, disfrutando de la tranquilidad de leer a tu propio ritmo, sin presiones ni compromisos adicionales. Además, recibe recomendaciones de nuestros expertos.
+                </p>
+                <a href="http://127.0.0.1:5501/suscripcion.html" class="signup-btn">¡Ideal para mí!</a>
             </div>
             <div class="pricing-card">
                 <h2>Lector Amigo</h2>
                 <p class="price">15€ / mes</p>
                 <ul>
-                    <li>1 libro al mes relacionado con tu temática favorita</li>
-                    <li>Elige entre nuestras variadas temáticas literarias</li>
-                    <li>Participa en debates exclusivos con otros entusiastas</li>
+                    <li>Recibirás un libro al mes de tu género preferido</li>
+                    <li>Participa en debates con otros apasionados de la lectura, enriqueciendo tu experiencia y perspectiva.</li>
                     <li>Accede a foros y eventos en línea</li>
                 </ul>
-                <a href="#" class="signup-btn">Únete a la Comunidad</a>
+                <a href="http://127.0.0.1:5501/suscripcion.html" class="signup-btn">¡Únete a la comunidad!</a>
             </div>
             <div class="pricing-card">
                 <h2>Lector Voraz</h2>
                 <p class="price">25€ / mes</p>
                 <ul>
-                    <li>3 libros al mes, cada uno de una temática diferente</li>
-                    <li>Elige hasta tres de nuestras variadas temáticas literarias</li>
+                    <li>Tres libros al mes, de un mismo género de hasta tres diferentes</li>
                     <li>Acceso ilimitado a todos los debates y foros</li>
                     <li>Participa en eventos exclusivos y obtén recomendaciones personalizadas</li>
                 </ul>
-                <a href="#" class="signup-btn">Vive la Experiencia Completa</a>
+                <a href="http://127.0.0.1:5501/suscripcion.html" class="signup-btn">¡Si quiero!</a>
             </div>
         </div>
         <div class="container">
@@ -117,6 +130,7 @@
                     <p>Como Lector Voraz, tendrás acceso a eventos exclusivos y recibirás recomendaciones personalizadas de libros. Estos eventos pueden incluir charlas con autores, talleres de lectura y más.</p>
                 </div>
             </div>
+            
     
             <p class="final-description"><span class="destacado">READ MIND</span> está diseñado para ofrecerte una experiencia literaria rica y variada, adaptándose a tus gustos y preferencias. Únete a nuestra comunidad y descubre un mundo de libros y conversaciones apasionantes. ¡Estamos emocionados de tenerte con nosotros!</p>
         </div>

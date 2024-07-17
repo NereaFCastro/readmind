@@ -13,22 +13,43 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/planes.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+
 </head>
 <body>
-    <header class="Header">
-        <div class="Header-logo">
-            <a href="http://127.0.0.1:5501/index.html"><img src="img/READMIND.png" alt="Logo" class="Header-logoImage"></a>
-        </div>
-        <div class="Header-paginas">
-        <nav class="Header-nav">
-            <ul class="Header-navList">
-                <li class="Header-navItem"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLink">¿quiénes somos?</a></li>
-                <li class="Header-navItem"><a href="http://127.0.0.1:5501/planes.html" class="Header-navLink">planes</a></li>
-                <li class="Header-navItem"><a href="http://127.0.0.1:5501/contacto.html" class="Header-navLink">FAQ</a></li>
-            </ul>
-        </nav> 
-    </div>
-    </header>
+<header class="Header">
+            <div class="Header-paginas">
+                <div class="Header-logo">
+                    <a href="http://127.0.0.1:5501/index.html"><img src="img/READMIND.png" alt="Logo" class="Header-logoImage"></a>
+                </div>
+                <nav class="Header-nav">
+                    <ul class="Header-navList">
+                        <li class="Header-navItem"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLink">¿quiénes somos?</a></li>
+                        <li class="Header-navItem"><a href="http://127.0.0.1:5501/planes.html" class="Header-navLink">planes</a></li>
+                        <li class="Header-navItem"><a href="http://127.0.0.1:5501/contacto.html" class="Header-navLink">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="Header-right">
+                <a href="login.html" class="Header-navLink">
+                    <i class="fas fa-user"></i> Log in
+                </a>
+            </div>
+            <button class="Header-menuButton" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="Header-mobileMenu">
+                <nav class="Header-navMobile">
+                    <ul class="Header-navListMobile">
+                        <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/quienessomos.html" class="Header-navLinkMobile">¿Quiénes somos?</a></li>
+                        <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/planes.html" class="Header-navLinkMobile">Planes</a></li>
+                        <li class="Header-navItemMobile"><a href="http://127.0.0.1:5501/contacto.html" class="Header-navLinkMobile">FAQ</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
 <main class="Main">
         
 <!-- <div class="Main-intro"> -->
@@ -36,7 +57,7 @@
         <p class="Main-texto">¿Te apasiona descubrir nuevos mundos a través de la lectura? 
     Únete a nuestro club y comparte el placer de explorar historias fascinantes en compañía.  ¡Suscríbete a <span class="destacado">READ MIND</span> y disfruta de una nueva lectura cada mes!</p>
     </div>
-    <a href="#" class="button">¡Únete al club!</a>
+    <a href="http://127.0.0.1:5501/suscripcion.html" class="button">¡Únete al club!</a>
     <div class="Main-ilustracion"> 
   
 </div>
@@ -96,8 +117,15 @@
     </div>
 
 </div>
+<a href="http://127.0.0.1:5501/contacto.html#contact-form-title" class="Header-contactIcon">
+    <i class="fas fa-envelope"></i>
+</a>
+<a href="#" class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
     </main>
-    <div class="footer">
+
+    <footer class="footer">
         
         <div class="social-icons">
             <a href="https://wa.me/123456789" target="_blank" title="WhatsApp">
@@ -115,7 +143,7 @@
         </div>
         <div class="Footer_tyc "><a href="tyyc.html">Términos y condiciones</a></div>
        
-    </div>
+    </footer>
        
 </body>
 </html>
